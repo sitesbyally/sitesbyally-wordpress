@@ -69,3 +69,10 @@
     min-height: 200px;
     width: 80%;
 }
+
+.et_pb_section_0_tb_footer {
+    bottom: unset !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: unset !important;
+}
