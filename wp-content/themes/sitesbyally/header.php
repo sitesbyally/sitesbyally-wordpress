@@ -48,7 +48,7 @@
                      <?php 
                            $header_logo = $header_options['logo'];
                            if ($header_logo) {
-                              echo '<a href="' . site_url() . '"><img class="header-logo" src="' . $header_logo['url'] . '" alt="Sask Wheat Logo" /></a>';
+                              echo '<a href="' . site_url() . '"><img class="header-logo" src="' . $header_logo['url'] . '" alt="SBA Logo" /></a>';
                            }
                      ?>
                </div>        
