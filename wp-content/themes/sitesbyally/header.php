@@ -41,32 +41,6 @@
             ) );
             ?>
         </nav>
-
-        <div class="menu--mobile">
-         <div class="menu--mobile__header">
-               <div class="logo-holder">
-                     <?php 
-                           $header_logo = $header_options['logo'];
-                           if ($header_logo) {
-                              echo '<a href="' . site_url() . '"><img class="header-logo" src="' . $header_logo['url'] . '" alt="SBA Logo" /></a>';
-                           }
-                     ?>
-               </div>        
-               <div class="header__mobile-toggle mobile-menu-btn">
-                  <span class="bar1"></span> 
-                  <span class="bar2"></span> 
-                  <span class="bar3"></span> 
-               </div>
-         </div>
-         <div class="row mobilemenu hidden">
-               <nav class="nav--mobile">
-                  <span class="search-bar"><?php get_search_form(); ?></span>
-                  <?php thi_main_nav_menu() ?>
-                  <?php thi_secondary_nav_menu() ?>
-               </nav>
-         </div>
-      </div>
-    </div>
 </header>
 
 <div id="main-area">
