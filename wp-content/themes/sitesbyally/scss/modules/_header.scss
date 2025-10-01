@@ -7,12 +7,6 @@
       justify-content: space-between;
       align-items: center;
    }
-   &__mobile-toggle {
-      display: none;
-      @media screen and (max-width:980px) {
-         display: block;
-      }
-   }
    &__nav {
       .nav{
          display: flex;
@@ -25,5 +19,14 @@
             color: var(--yellow-light);
          }
       }
+   }
+   &__mobile-toggle {
+      display: none;
+      @media screen and (max-width:980px) {
+         display: block;
+      }
+   }
+   .menu--mobile{
+      display: none;
    }
 }
