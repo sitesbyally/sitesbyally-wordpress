@@ -1,0 +1,29 @@
+.header {
+   background-color: var(--brown);
+   color: #fff;
+   padding-block: 15px;
+   .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__mobile-toggle {
+      display: none;
+      @media screen and (max-width:980px) {
+         display: block;
+      }
+   }
+   &__nav {
+      .nav{
+         display: flex;
+         gap: 35px;
+         font-size: 18px;
+      }
+      .menu-item > a{
+         color: #fff;
+         &:visited {
+            color: var(--yellow-light);
+         }
+      }
+   }
+}
