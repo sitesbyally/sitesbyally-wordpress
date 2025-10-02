@@ -1,9 +1,11 @@
 <?php
-function sba_enqueue_styles() {
+/**
+ * Enqueue styles and scripts for the child theme using Vite
+ */
+function sba_enqueue_assets() {
     $parenthandle = 'divi-style';
     $theme = wp_get_theme();
 
-    // 1️⃣ Parent Divi CSS
     wp_enqueue_style(
         $parenthandle,
         get_template_directory_uri() . '/style.css',
@@ -11,34 +13,32 @@ function sba_enqueue_styles() {
         $theme->parent()->get('Version')
     );
 
-    // 2️⃣ Compiled child CSS
-    wp_enqueue_style(
-        'child-custom',
-        get_stylesheet_directory_uri() . '/css/custom.css',
-        array( $parenthandle ),
-        filemtime( get_stylesheet_directory() . '/css/custom.css' )
-    );
+    $dist_path = get_stylesheet_directory_uri() . '/dist/';
+    $dist_dir  = get_stylesheet_directory() . '/dist/';
 
-    // 3️⃣ Google Fonts
-    $google_fonts_url = 'https://fonts.googleapis.com/css2?family=Bad+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap';
-    wp_enqueue_style(
-        'sba-google-fonts',
-        esc_url( $google_fonts_url ),
-        array(),
-        null
-    );
+    $style_file = $dist_dir . 'style.css';
+    $js_file    = $dist_dir . 'main.js';
+
+    if ( file_exists($style_file) ) {
+        wp_enqueue_style(
+            'sba-child-style',
+            $dist_path . 'style.css',
+            array( $parenthandle ),
+            filemtime($style_file)
+        );
+    }
+
+    if ( file_exists($js_file) ) {
+        wp_enqueue_script(
+            'sba-child-js',
+            $dist_path . 'main.js',
+            array(),
+            filemtime($js_file),
+            true
+        );
+    }
 }
-add_action( 'wp_enqueue_scripts', 'sba_enqueue_styles' );
-
-/**
- * 4️⃣ Preconnect to Google Fonts to improve performance
- */
-function sba_preconnect_google_fonts() {
-    echo '<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>';
-    echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
-}
-add_action( 'wp_head', 'sba_preconnect_google_fonts', 1 );
-
+add_action('wp_enqueue_scripts', 'sba_enqueue_assets');
 
 
 // Disable unused Divi Builder modules

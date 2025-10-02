@@ -1,0 +1,100 @@
+@use 'baseline/variables' as vars;
+
+.header {
+   background-color: var(--brown);
+   color: #fff;
+   padding-block: 15px;
+   .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__nav {
+      @media screen and (max-width:vars.$mobile) {
+         display: none;
+      }
+      .nav{
+         display: flex;
+         gap: 35px;
+         font-size: 18px;
+      }
+      .menu-item > a{
+         color: #fff;
+         &:visited {
+            color: var(--yellow-light);
+         }
+      }
+   }
+
+   /* Mobile menu styles */
+   .menu--mobile {
+      display: none;
+      @media screen and (max-width:vars.$mobile) {
+         display: block;
+      }
+   }
+   .mobilemenu {
+      position: absolute;
+      z-index: 999;
+      padding: 19px;
+      right: 0px;
+      background-color: var(--teal);
+      left: 0;
+      top: 71px;
+      border-radius: 20px;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.28s ease, visibility 0.28s ease;
+      &.hidden{
+         visibility:hidden;
+         opacity: 0;
+      }
+      nav > ul.nav {
+         text-align: center;
+         display: flex;
+         flex-direction: column;
+         > li.menu-item {
+            font-size: 22px;
+            padding: 10px;
+            a {
+               color: #fff;
+               &:visited {
+                  color: var(--yellow-light);
+               }
+            }
+         }
+      }
+
+
+   }
+
+   .mobile-menu-btn {
+    display: none; /* Hide initially */
+    &:hover{
+        cursor:pointer;
+    }
+    @media (max-width: vars.$mobile) {
+        display: block;
+        height:20px;
+        span{
+            background-color:#fff;
+            height:3px;
+            width:29px;
+            display: block;
+            margin-bottom:6px;
+            transition: all 0.3s ease-in-out;
+        }
+        &.open{
+            .bar1{
+                transform: rotate(45deg) translateY(7px); 
+            }
+            .bar2{
+                opacity: 0; 
+            }
+            .bar3{
+                transform: rotate(-45deg) translateY(-13px) translateX(6px);
+            }
+        }
+    }
+}
+}
