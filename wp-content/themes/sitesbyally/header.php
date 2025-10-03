@@ -7,7 +7,7 @@
 
     <title><?php echo wp_title('|', true, 'right') . get_bloginfo('name');?></title>
 
-	<meta name="description" content="">
+	<meta name="description" content="Portfolio website for Ally of Sites By Ally">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
             }
             ?>
             <div class="header__logo">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="Link to home page">
                     <img src="<?php echo esc_url( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?> logo" width="50" height="50" />
                 </a>
             </div>
