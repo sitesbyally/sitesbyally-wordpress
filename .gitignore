@@ -34,7 +34,7 @@ wp-config.php
 /wp-content/themes/sitesbyally/node_modules
 /wp-content/themes/sitesbyally/dist
 
-# All plugins
+# All plugins etc
 /wp-content/plugins/
 /wp-content/mu-plugins/
 /wp-content/database/
