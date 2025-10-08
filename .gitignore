@@ -36,3 +36,5 @@ wp-config.php
 
 # All plugins
 /wp-content/plugins
+/wp-content/mu-plugins
+/wp-content/database
