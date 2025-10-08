@@ -5,3 +5,13 @@
 .grecaptcha-badge { 
     visibility: hidden!important;
 }
+
+*:focus {
+    border: 2px solid var(--yellow-light)!important;
+    outline: 2px solid var(--orange)!important;
+    border-radius: 3px;
+}
+
+a:hover {
+    text-decoration: underline!important;
+}

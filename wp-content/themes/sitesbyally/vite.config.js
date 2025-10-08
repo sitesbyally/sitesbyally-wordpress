@@ -2,10 +2,10 @@ import { defineConfig } from 'vite';
 import path from 'path';
 
 export default defineConfig({
-  root: 'assets', // your source files
-  base: '',       // relative paths for WordPress
+  root: 'assets',
+  base: '',
   build: {
-    outDir: '../dist', // compiled files go here
+    outDir: '../dist',
     emptyOutDir: true,
     rollupOptions: {
       input: {

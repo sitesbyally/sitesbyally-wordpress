@@ -97,12 +97,23 @@ function custom_footer_text_input() {
     echo '<input type="text" id="custom_footer_text" name="custom_footer_text" value="' . esc_attr( $value ) . '" class="regular-text">';
 }
 
-// Force WordPress to always load child theme footer.php
+// Remove Divi's default viewport meta tag to improve accessibility with user-scalable meta
+function sba_remove_et_viewport_meta() {
+    remove_action('wp_head', 'et_add_viewport_meta');
+}
+function sba_custom_et_add_viewport_meta(){
+    echo '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />';
+}
+add_action( 'init', 'sba_remove_et_viewport_meta');
+add_action( 'wp_head', 'sba_custom_et_add_viewport_meta' );
+
+
+// Force WordPress to always load child theme footer.php 
+// - having issues with Divi's fallback footer getting in the way of my custom one.
 function sba_force_child_footer() {
     // Prevent Divi from running its own footer output
     remove_all_actions( 'get_footer' );
-
-    // Load child theme footer.php manually
+    // Load child footer.php manually
     require get_stylesheet_directory() . '/footer.php';
 }
 add_action( 'get_footer', 'sba_force_child_footer', 1 );
