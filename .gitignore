@@ -35,6 +35,8 @@ wp-config.php
 /wp-content/themes/sitesbyally/dist
 
 # All plugins
-/wp-content/plugins
-/wp-content/mu-plugins
-/wp-content/database
+/wp-content/plugins/
+/wp-content/mu-plugins/
+/wp-content/database/
+/wp-content/et-cache/
+/wp-content/fonts/
