@@ -40,3 +40,6 @@ wp-config.php
 /wp-content/database/
 /wp-content/et-cache/
 /wp-content/fonts/
+
+# Keep my custom block plugin
+!/wp-content/plugins/team-member-card

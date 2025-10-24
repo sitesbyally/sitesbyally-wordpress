@@ -118,4 +118,13 @@ function sba_force_child_footer() {
 }
 add_action( 'get_footer', 'sba_force_child_footer', 1 );
 
+/**
+ * Allow upload of zip files.
+ */
+function allow_dev_file_uploads( $mime_types ) {
+    $mime_types['zip']  = 'application/zip';
+
+    return $mime_types;
+}
+add_filter( 'upload_mimes', 'allow_dev_file_uploads' );
 
