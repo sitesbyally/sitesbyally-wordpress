@@ -1,0 +1,17 @@
+.wp-block-file {
+   margin-block: 10px;
+   a:not(.wp-block-file__button) {
+      font-size: 18px;
+      color: var(--orange);
+      font-weight: 700;
+   }
+   a.wp-block-file__button {
+    background-color: var(--teal);
+    color: var(--yellow-light);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-decoration: none;
+   }
+}
