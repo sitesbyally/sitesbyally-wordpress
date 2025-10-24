@@ -35,7 +35,7 @@ wp-config.php
 /wp-content/themes/sitesbyally/dist
 
 # All plugins etc
-/wp-content/plugins/
+/wp-content/plugins/*
 /wp-content/mu-plugins/
 /wp-content/database/
 /wp-content/et-cache/
@@ -43,3 +43,4 @@ wp-config.php
 
 # Keep my custom block plugin
 !/wp-content/plugins/team-member-card
+!/wp-content/plugins/team-member-card/**
