@@ -41,6 +41,8 @@ wp-config.php
 /wp-content/et-cache/
 /wp-content/fonts/
 
-# Keep my custom block plugin
+# Keep my custom block plugins
 !/wp-content/plugins/team-member-card
 !/wp-content/plugins/team-member-card/**
+!/wp-content/plugins/sba-custom-blocks
+!/wp-content/plugins/sba-custom-blocks/**
