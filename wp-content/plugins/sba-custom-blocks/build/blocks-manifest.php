@@ -23,8 +23,8 @@ return array(
 		),
 		'supports' => array(
 			'color' => array(
-				'background' => true,
-				'text' => true
+				'text' => true,
+				'background' => false
 			),
 			'html' => false
 		),

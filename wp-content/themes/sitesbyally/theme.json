@@ -1,91 +1,91 @@
 {
-    "version": 3,
-    "settings": {
-      "color": {
-         "defaultPalette": false,
-         "palette": [
-               {
-                  "name": "Brown",
-                  "slug": "brown",
-                  "color": "#2c1116"
-               },
-               {
-                  "name": "Orange",
-                  "slug": "orange",
-                  "color": "#cb6812"
-               },
-               {
-                  "name": "Yellow",
-                  "slug": "yellow",
-                  "color": "#f5a300"
-               },
-               {
-                  "name": "Teal",
-                  "slug": "teal",
-                  "color": "#0C3B45"
-               },
-               {
-                  "name": "Light Yellow",
-                  "slug": "yellow-light",
-                  "color": "#f4ebd2"
-               },
-               {
-                  "name": "White",
-                  "slug": "white",
-                  "color": "#ffffff"
-               },
-               {
-                  "name": "Black",
-                  "slug": "black",
-                  "color": "#000000"
-               }
-         ]
-      },
-      "layout": {
-         "contentSize": "1200px"
-      },
-      "spacing": {
-         "margin": false,
-         "padding": false,
-         "blockGap": null,
-         "units": [ "px", "em", "rem", "vh", "vw" ]
-      },
-      "typography": {
-         "customFontSize": false,
-         "lineHeight": false,
-         "dropCap": false,
-         "fluid": false,
-         "fontStyle": false,
-         "fontWeight": true,
-         "letterSpacing": false,
-         "textDecoration": true,
-         "textTransform": true,
-         "defaultFontSizes": false,
-         "fontSizes": [
-            {
-               "name": "Default",
-               "slug": "sm",
-               "size": "16px"
-            },
-            {
-               "name": "Medium",
-               "slug": "med",
-               "size": "18px"
-            },
-            {
-               "name": "Large",
-               "slug": "lg",
-               "size": "20px"
-            },
-            {
-               "name": "Headings",
-               "slug": "xl",
-               "size": "50px"
-            }
-         ],
-         "defaultFontFamilies": false,
-         "fontFamilies": [
-            {
+	"version": 3,
+	"settings": {
+		"color": {
+			"defaultPalette": false,
+			"palette": [
+				{
+					"name": "Brown",
+					"slug": "brown",
+					"color": "#2c1116"
+				},
+				{
+					"name": "Orange",
+					"slug": "orange",
+					"color": "#cb6812"
+				},
+				{
+					"name": "Yellow",
+					"slug": "yellow",
+					"color": "#f5a300"
+				},
+				{
+					"name": "Teal",
+					"slug": "teal",
+					"color": "#0C3B45"
+				},
+				{
+					"name": "Light Yellow",
+					"slug": "yellow-light",
+					"color": "#f4ebd2"
+				},
+				{
+					"name": "White",
+					"slug": "white",
+					"color": "#ffffff"
+				},
+				{
+					"name": "Black",
+					"slug": "black",
+					"color": "#000000"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "1200px"
+		},
+		"spacing": {
+			"margin": false,
+			"padding": false,
+			"blockGap": null,
+			"units": ["px", "em", "rem", "vh", "vw"]
+		},
+		"typography": {
+			"customFontSize": false,
+			"lineHeight": false,
+			"dropCap": false,
+			"fluid": false,
+			"fontStyle": false,
+			"fontWeight": true,
+			"letterSpacing": false,
+			"textDecoration": true,
+			"textTransform": true,
+			"defaultFontSizes": false,
+			"fontSizes": [
+				{
+					"name": "Default",
+					"slug": "sm",
+					"size": "16px"
+				},
+				{
+					"name": "Medium",
+					"slug": "med",
+					"size": "18px"
+				},
+				{
+					"name": "Large",
+					"slug": "lg",
+					"size": "20px"
+				},
+				{
+					"name": "Headings",
+					"slug": "xl",
+					"size": "50px"
+				}
+			],
+			"defaultFontFamilies": false,
+			"fontFamilies": [
+				{
 					"name": "Bad Script",
 					"slug": "accent",
 					"fontFamily": "'Bad Script', serif",
@@ -95,11 +95,11 @@
 							"fontWeight": "500",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/BadScript-Regular.woff2" ]
-						}						
+							"src": ["file:./assets/fonts/BadScript-Regular.woff2"]
+						}
 					]
 				},
-            {
+				{
 					"name": "Open Sans",
 					"slug": "secondary",
 					"fontFamily": "'Open Sans', sans-serif",
@@ -109,35 +109,35 @@
 							"fontWeight": "500 700",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/OpenSans-VariableFont_wdth,wght.woff2" ]
+							"src": ["file:./assets/fonts/OpenSans-VariableFont_wdth,wght.woff2"]
 						},
 						{
 							"fontFamily": "Open Sans",
 							"fontWeight": "500 700",
 							"fontStyle": "italic",
 							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/OpenSans-Italic-VariableFont_wdth,wght.woff2" ]
+							"src": ["file:./assets/fonts/OpenSans-Italic-VariableFont_wdth,wght.woff2"]
 						}
 					]
 				}
-         ]
-      },
-      "blocks": {
-         "core/paragraph": {
-               "color": {},
-               "custom": {},
-               "layout": {},
-               "spacing": {},
-               "typography": {}
-         }
-      }
-    },
-    "styles": {
-      "color": {
-         "background": "#f4ebd2"
-      },
-      "typography": {
-         "fontSizes": [
+			]
+		},
+		"blocks": {
+			"core/paragraph": {
+				"color": {},
+				"custom": {},
+				"layout": {},
+				"spacing": {},
+				"typography": {}
+			}
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "#f4ebd2"
+		},
+		"typography": {
+			"fontSizes": [
 				{
 					"name": "Default",
 					"slug": "sm",
@@ -159,8 +159,8 @@
 					"size": "50px"
 				}
 			]
-      },
-      "blocks": {
+		},
+		"blocks": {
 			"core/paragraph": {
 				"typography": {
 					"fontFamily": "Open Sans, Arial, sans-serif",
@@ -173,22 +173,23 @@
 				}
 			},
 			"core/heading": {
-            "elements":{
-               "h1": {
-                  "typography": {
-                     "font-weight": "600",
-                     "text-transform": "uppercase",
-                     "font-size": "50px",
-                     "fontStyle": "normal",
-					      "letterSpacing": "0",
-					      "lineHeight": "1.2"
-                  },
-                  "css": "padding-bottom: 10px"
-               }
-            }
-         }
+				"elements": {
+					"h1": {
+						"typography": {
+							"font-weight": "600",
+							"text-transform": "uppercase",
+							"font-size": "50px",
+							"fontStyle": "normal",
+							"letterSpacing": "0",
+							"lineHeight": "1.2"
+						},
+						"css": "padding-bottom: 10px"
+					}
+				}
+			},
+			"sba-custom-blocks/hero-section": {}
 		}
-    },
-    "customTemplates": {},
-    "templateParts": {}
+	},
+	"customTemplates": {},
+	"templateParts": {}
 }

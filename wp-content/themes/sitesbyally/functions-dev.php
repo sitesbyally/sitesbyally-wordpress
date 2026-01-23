@@ -104,8 +104,8 @@ function custom_footer_text_input() {
 function sba_custom_et_add_viewport_meta(){
     echo '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />';
 }
-// add_action( 'init', 'sba_remove_et_viewport_meta');
-add_action( 'wp_head', 'sba_custom_et_add_viewport_meta' );
+add_action( 'init', 'sba_remove_et_viewport_meta');
+// add_action( 'wp_head', 'sba_custom_et_add_viewport_meta' );
 
 
 // Force WordPress to always load child theme footer.php 

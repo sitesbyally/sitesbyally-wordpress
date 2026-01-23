@@ -3,7 +3,7 @@
  * Enqueue styles and scripts for the child theme using Vite
  */
 function sba_enqueue_assets() {
-    $parenthandle = 'underscores-style';
+    $parenthandle = 'divi-style';
     $theme = wp_get_theme();
 
     wp_enqueue_style(
@@ -42,37 +42,37 @@ add_action('wp_enqueue_scripts', 'sba_enqueue_assets');
 
 
 // Disable unused Divi Builder modules
-// function custom_disable_divi_modules() {
-//     if ( class_exists('ET_Builder_Module') ) {
-//         remove_shortcode('et_pb_accordion');
-//         remove_shortcode('et_pb_audio');
-//         remove_shortcode('et_pb_bar_counter');
-//         remove_shortcode('et_pb_blurb');
-//         remove_shortcode('et_pb_call_to_action');
-//         remove_shortcode('et_pb_circle_counter');
-//         remove_shortcode('et_pb_comments');
-//         remove_shortcode('et_pb_contact_form');
-//         remove_shortcode('et_pb_countdown_timer');
-//         remove_shortcode('et_pb_email_option');
-//         remove_shortcode('et_pb_portfolio');
-//         remove_shortcode('et_pb_gallery');
-//         remove_shortcode('et_pb_login');
-//         remove_shortcode('et_pb_map');
-//         remove_shortcode('et_pb_number_counter');
-//         remove_shortcode('et_pb_person');
-//         remove_shortcode('et_pb_post_navigation');
-//         remove_shortcode('et_pb_post_slider');
-//         remove_shortcode('et_pb_pricing_table');
-//         remove_shortcode('et_pb_search');
-//         remove_shortcode('et_pb_sidebar');
-//         remove_shortcode('et_pb_slider');
-//         remove_shortcode('et_pb_tabs');
-//         remove_shortcode('et_pb_testimonial');
-//         remove_shortcode('et_pb_toggle');
-//         remove_shortcode('et_pb_video');
-//     }
-// }
-// add_action('et_builder_ready', 'custom_disable_divi_modules');
+function custom_disable_divi_modules() {
+    if ( class_exists('ET_Builder_Module') ) {
+        remove_shortcode('et_pb_accordion');
+        remove_shortcode('et_pb_audio');
+        remove_shortcode('et_pb_bar_counter');
+        remove_shortcode('et_pb_blurb');
+        remove_shortcode('et_pb_call_to_action');
+        remove_shortcode('et_pb_circle_counter');
+        remove_shortcode('et_pb_comments');
+        remove_shortcode('et_pb_contact_form');
+        remove_shortcode('et_pb_countdown_timer');
+        remove_shortcode('et_pb_email_option');
+        remove_shortcode('et_pb_portfolio');
+        remove_shortcode('et_pb_gallery');
+        remove_shortcode('et_pb_login');
+        remove_shortcode('et_pb_map');
+        remove_shortcode('et_pb_number_counter');
+        remove_shortcode('et_pb_person');
+        remove_shortcode('et_pb_post_navigation');
+        remove_shortcode('et_pb_post_slider');
+        remove_shortcode('et_pb_pricing_table');
+        remove_shortcode('et_pb_search');
+        remove_shortcode('et_pb_sidebar');
+        remove_shortcode('et_pb_slider');
+        remove_shortcode('et_pb_tabs');
+        remove_shortcode('et_pb_testimonial');
+        remove_shortcode('et_pb_toggle');
+        remove_shortcode('et_pb_video');
+    }
+}
+add_action('et_builder_ready', 'custom_disable_divi_modules');
 
 // Register footer text setting
 function custom_footer_setting() {
@@ -98,13 +98,13 @@ function custom_footer_text_input() {
 }
 
 // Remove Divi's default viewport meta tag to improve accessibility with user-scalable meta
-// function sba_remove_et_viewport_meta() {
-//     remove_action('wp_head', 'et_add_viewport_meta');
-// }
+function sba_remove_et_viewport_meta() {
+    remove_action('wp_head', 'et_add_viewport_meta');
+}
 function sba_custom_et_add_viewport_meta(){
     echo '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />';
 }
-// add_action( 'init', 'sba_remove_et_viewport_meta');
+add_action( 'init', 'sba_remove_et_viewport_meta');
 add_action( 'wp_head', 'sba_custom_et_add_viewport_meta' );
 
 

@@ -23,7 +23,7 @@
         <div class="container">
             <?php
             // Get logo from Divi settings or fallback
-            $logo = '';
+            $logo = et_get_option( 'divi_logo' );
             if ( empty( $logo ) ) {
                 $logo = get_template_directory_uri() . '/images/logo.png';
             }
@@ -72,5 +72,5 @@
         
     <?php
     // Hook for content after header
-    //do_action( 'et_before_main_content' );
+    do_action( 'et_before_main_content' );
     ?>
