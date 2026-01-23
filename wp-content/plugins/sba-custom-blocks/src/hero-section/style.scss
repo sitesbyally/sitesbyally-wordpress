@@ -1,0 +1,19 @@
+.wp-block-create-block-hero-section {
+	min-height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+	background-blend-mode: overlay;
+	background-color: rgba(44, 17, 22, 0.34) !important;
+	.hero-section {
+		&__title {
+			color: inherit;
+			margin: 0 auto;
+			text-align: center;
+			text-shadow: 0.08em 0.08em 0.08em rgba(0, 0, 0, 0.4);
+			font-family: var(--wp--preset--font-family--accent);
+			font-size: 100px;
+		}
+	}
+}

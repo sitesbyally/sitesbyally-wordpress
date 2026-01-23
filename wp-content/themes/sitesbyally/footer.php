@@ -1,8 +1,8 @@
 <?php
-// Bail if Divi Theme Builder footer is active
-if ( et_theme_builder_overrides_layout( ET_THEME_BUILDER_FOOTER_LAYOUT_POST_TYPE ) ) {
-    return;
-}
+// // Bail if Divi Theme Builder footer is active
+// if ( et_theme_builder_overrides_layout( ET_THEME_BUILDER_FOOTER_LAYOUT_POST_TYPE ) ) {
+//     return;
+// }
 ?>
 
 <footer id="sba-footer" class="footer">
