@@ -1,16 +1,25 @@
 /*!*********************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/sba-custom-blocks/style.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************************/
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
-.wp-block-create-block-sba-custom-blocks {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
+.skills-section__column {
+  border-radius: 20px 20px 20px 20px;
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+}
+.skills-section__column h2 {
+  padding: 0 0 10px;
+  margin: 0;
+  line-height: 1.2;
+}
+.skills-section__column p {
+  padding: 0;
+  margin: 0;
+}
+.skills-section__row {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

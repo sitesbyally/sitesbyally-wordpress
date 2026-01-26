@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name:       Sba Custom Blocks
- * Description:       Example block scaffolded with Create Block tool.
+ * Plugin Name:       Sites By Ally Custom Blocks
+ * Description:       A set of Gutenberg blocks for a simple website.
  * Version:           0.1.0
  * Requires at least: 6.7
  * Requires PHP:      7.4
- * Author:            The WordPress Contributors
+ * Author:            Sites By Ally
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       sba-custom-blocks

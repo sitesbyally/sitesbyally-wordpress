@@ -1,17 +1,39 @@
 .container {
-    max-width: 1200px;
+	max-width: 1200px;
 }
 
-.grecaptcha-badge { 
-    visibility: hidden!important;
+.grecaptcha-badge {
+	visibility: hidden !important;
 }
 
 *:focus {
-    border: 2px solid var(--yellow-light)!important;
-    outline: 2px solid var(--orange)!important;
-    border-radius: 3px;
+	border: 2px solid var(--yellow-light) !important;
+	outline: 2px solid var(--orange) !important;
+	border-radius: 3px;
 }
 
 a:hover {
-    text-decoration: underline!important;
+	text-decoration: underline !important;
+}
+
+body {
+	background-color: var(--yellow-light);
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-block: 0.1em;
 }
