@@ -33,3 +33,8 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 
 = 0.1.0 =
 * Release
+
+== Usage ==
+See src/sba-custom-blocks/style.scss for available classes.
+
+To add custom styles to columns and rows, use the skills-section__row and skills-section__column classes. 
