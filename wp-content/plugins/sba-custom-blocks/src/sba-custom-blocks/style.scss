@@ -18,3 +18,11 @@
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
+.contact-section {
+	padding-block: 100px;
+	&__wrapper {
+		border-radius: 20px;
+		padding: 30px 50px;
+	}
+}
