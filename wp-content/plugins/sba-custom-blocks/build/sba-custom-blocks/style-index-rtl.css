@@ -21,3 +21,10 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+.contact-section {
+  padding-block: 100px;
+}
+.contact-section__wrapper {
+  border-radius: 20px;
+  padding: 30px 50px;
+}
